@@ -6,11 +6,11 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/RegisterTitle"
-        android:layout_width="285dp"
-        android:layout_height="240dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="4dp"
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
         android:drawableTop="@drawable/welcome"
         android:text="Get Started"
         android:textSize="24sp"
@@ -21,52 +21,69 @@
         android:id="@+id/registerFullName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:drawableLeft="@drawable/user"
+        android:layout_marginTop="72dp"
+        android:drawableRight="@drawable/user"
         android:hint="Full name"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/RegisterTitle" />
+        app:layout_constraintTop_toBottomOf="@id/registerTitle" />
 
     <EditText
         android:id="@+id/registerEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:hint="Valid email"
+        android:drawableRight="@drawable/mail"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/registerFullName" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/smartphone"
+        android:hint="Phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerTitle" />
 
     <EditText
         android:id="@+id/registerPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/lock"
         android:hint="Strong Password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/registerEmail" />
 
+
+
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="68dp"
         android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.781"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/registerPassword" />
 
     <TextView
+        android:id="@+id/switchToLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already a member? Log In"
         android:textColor="@color/purple_500"
         app:layout_constraintTop_toBottomOf="@id/btnRegister"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="openLoginFragment" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
