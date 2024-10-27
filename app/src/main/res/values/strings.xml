@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Assignment2</string>
+=======
+    <string name="app_name">Assignment</string>
+>>>>>>> a13ce15e5a1b7a16ad8b3839942ad3fc84da4962
 </resources>

@@ -4,11 +4,19 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace 'com.example.assignment2'
     compileSdk 32
 
     defaultConfig {
         applicationId "com.example.assignment2"
+=======
+    namespace 'com.example.assignment'
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.example.assignment"
+>>>>>>> a13ce15e5a1b7a16ad8b3839942ad3fc84da4962
         minSdk 21
         targetSdk 32
         versionCode 1
@@ -30,11 +38,20 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+<<<<<<< HEAD
+=======
+    viewBinding {
+        enabled = true
+    }
+>>>>>>> a13ce15e5a1b7a16ad8b3839942ad3fc84da4962
 }
 
 dependencies {
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a13ce15e5a1b7a16ad8b3839942ad3fc84da4962
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'com.google.android.material:material:1.12.0'

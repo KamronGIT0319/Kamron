@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<<<<<<< HEAD
 
 
     <ImageView
@@ -114,3 +115,14 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+//change 4
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> a13ce15e5a1b7a16ad8b3839942ad3fc84da4962
